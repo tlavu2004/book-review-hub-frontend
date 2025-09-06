@@ -53,7 +53,7 @@ export default function LoginPage() {
       const result = await response.json();
       if (response.ok) {
         // If login is successful, store the token in local storage
-        const token = result.data.token;
+        const token = result.data.accessToken;
 
         // Check if the token is valid
         if (!token) {
